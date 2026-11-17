@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stefano Depetro — Operaio Metalmeccanico | Produzione e Logistica</title>
+  <meta name="description" content="Stefano Depetro, operaio metalmeccanico con esperienza in produzione, logistica e vendita. Profilo versatile e orientato al team." />
+  <meta name="theme-color" content="#F5F5F7" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Stefano Depetro",
+    "jobTitle": "Operaio Metalmeccanico",
+    "alumniOf": { "@type": "EducationalOrganization", "name": "Zenale e Butinone, Treviglio" },
+    "knowsAbout": ["Metalmeccanica", "Produzione", "Logistica", "Vendita", "Lavoro in team"]
+  }
+  </script>
+  <style>
+    :root {
+      --color-bg: #F5F5F7;
+      --color-surface: #FFFFFF;
+      --color-text-primary: #1D1D1F;
+      --color-text-secondary: #6E6E73;
+      --color-accent: #A2C4E0;
+      --color-accent-dark: #6E8BB5;
+      --color-silver: #8E8E93;
+      --color-silver-light: #C7C7CC;
+      --font-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.06);
+      --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.08);
+      --radius: 18px;
+      --transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-system);
+      background-color: var(--color-bg);
+      color: var(--color-text-primary);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .container { max-width: 980px; margin: 0 auto; padding: 0 24px; }
+    .section { padding: 100px 0; }
+    .section-title {
+      font-size: 48px; font-weight: 700; letter-spacing: -0.02em;
+      margin-bottom: 16px; color: var(--color-text-primary);
+    }
+    .section-subtitle {
+      font-size: 21px; font-weight: 400; color: var(--color-text-secondary);
+      margin-bottom: 60px; max-width: 700px;
+    }
+    .hero {
+      min-height: 100vh; display: flex; flex-direction: column;
+      justify-content: center; align-items: center; text-align: center;
+      padding: 120px 24px 80px;
+      background: linear-gradient(180deg, var(--color-bg) 0%, #EBEBF0 100%);
+    }
+    .hero-name {
+      font-size: 80px; font-weight: 700; letter-spacing: -0.03em;
+      line-height: 1.05; margin-bottom: 12px;
+      background: linear-gradient(135deg, var(--color-text-primary) 0%, var(--color-accent-dark) 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-title { font-size: 28px; font-weight: 500; color: var(--color-text-secondary); margin-bottom: 8px; }
+    .hero-tagline { font-size: 19px; color: var(--color-silver); max-width: 600px; margin-bottom: 48px; }
+    .hero-cta { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
+    .btn {
+      display: inline-block; padding: 16px 32px; border-radius: 980px;
+      font-size: 17px; font-weight: 500; text-decoration: none;
+      transition: var(--transition); cursor: pointer; border: none;
+    }
+    .btn-secondary {
+      background-color: transparent; color: var(--color-accent-dark);
+      border: 1.5px solid var(--color-accent-dark);
+    }
+    .btn-secondary:hover {
+      background-color: var(--color-accent-dark); color: #FFFFFF; transform: translateY(-2px);
+    }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+    .about-text { font-size: 19px; color: var(--color-text-secondary); line-height: 1.7; }
+    .about-text strong { color: var(--color-text-primary); font-weight: 600; }
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; }
+    .skill-card {
+      background: var(--color-surface); padding: 24px 16px; border-radius: var(--radius);
+      text-align: center; box-shadow: var(--shadow-soft); transition: var(--transition);
+    }
+    .skill-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+    .skill-icon { font-size: 28px; margin-bottom: 8px; }
+    .skill-name { font-size: 15px; font-weight: 500; color: var(--color-text-primary); }
+    .timeline { position: relative; padding-left: 32px; }
+    .timeline::before {
+      content: ''; position: absolute; left: 8px; top: 0; bottom: 0; width: 2px;
+      background: linear-gradient(180deg, var(--color-accent), var(--color-silver-light));
+    }
+    .timeline-item { position: relative; margin-bottom: 48px; padding-left: 24px; }
+    .timeline-item:last-child { margin-bottom: 0; }
+    .timeline-item::before {
+      content: ''; position: absolute; left: -28px; top: 6px; width: 12px; height: 12px;
+      border-radius: 50%; background: var(--color-accent);
+      border: 2px solid var(--color-surface); box-shadow: 0 0 0 3px var(--color-accent);
+    }
+    .timeline-role { font-size: 22px; font-weight: 600; color: var(--color-text-primary); margin-bottom: 4px; }
+    .timeline-company { font-size: 17px; font-weight: 500; color: var(--color-accent-dark); margin-bottom: 8px; }
+    .timeline-desc { font-size: 16px; color: var(--color-text-secondary); }
+    .edu-card {
+      background: var(--color-surface); padding: 40px; border-radius: var(--radius);
+      box-shadow: var(--shadow-soft); display: flex; align-items: flex-start; gap: 24px;
+    }
+    .edu-icon { font-size: 40px; flex-shrink: 0; }
+    .edu-title { font-size: 22px; font-weight: 600; margin-bottom: 4px; }
+    .edu-school { font-size: 17px; color: var(--color-accent-dark); font-weight: 500; margin-bottom: 8px; }
+    .edu-desc { font-size: 16px; color: var(--color-text-secondary); }
+    .footer { background: var(--color-surface); border-top: 1px solid #E5E5EA; padding: 60px 0; text-align: center; }
+    .footer-links { display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; margin-bottom: 24px; }
+    .footer-link {
+      color: var(--color-text-secondary); text-decoration: none; font-size: 16px;
+      font-weight: 500; transition: var(--transition);
+    }
+    .footer-link:hover { color: var(--color-accent-dark); }
+    .footer-copy { font-size: 13px; color: var(--color-silver); }
+    .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    @media (max-width: 768px) {
+      .hero-name { font-size: 52px; }
+      .hero-title { font-size: 22px; }
+      .section-title { font-size: 36px; }
+      .about-grid { grid-template-columns: 1fr; gap: 40px; }
+      .edu-card { flex-direction: column; }
+      .section { padding: 72px 0; }
+    }
+    @media (max-width: 480px) {
+      .hero-name { font-size: 40px; }
+      .hero-cta { flex-direction: column; width: 100%; }
+      .btn { width: 100%; text-align: center; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .fade-in { opacity: 1; transform: none; transition: none; }
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <h1 class="hero-name">Stefano Depetro</h1>
+    <p class="hero-title">Operaio Metalmeccanico | Produzione | Logistica</p>
+    <p class="hero-tagline">Professionista versatile con esperienza nel settore metalmeccanico, nella produzione e nella logistica. Orientato al team e all'apprendimento continuo.</p>
+    <div class="hero-cta">
+      <a href="#esperienza" class="btn btn-secondary">Scopri il mio percorso</a>
+    </div>
+  </section>
+
+  <section id="profilo" class="section">
+    <div class="container fade-in">
+      <h2 class="section-title">Profilo</h2>
+      <p class="section-subtitle">Un percorso costruito sulla concretezza e sulla flessibilità.</p>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Il mio percorso professionale mi ha permesso di maturare esperienze diverse ma complementari: dalla <strong>lavorazione metalmeccanica</strong> alla <strong>produzione alimentare</strong>, dalla <strong>logistica di magazzino</strong> alla <strong>relazione con il cliente</strong>.</p>
+          <p>Mi considero una persona <strong>collaborativa</strong>, abituata a lavorare in squadra e a rispettare le procedure. La mia forza è la capacità di adattarmi rapidamente a nuovi contesti e mansioni, mantenendo sempre un atteggiamento positivo e orientato al risultato.</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card"><div class="skill-icon">🤝</div><div class="skill-name">Lavoro in team</div></div>
+          <div class="skill-card"><div class="skill-icon">⚡</div><div class="skill-name">Apprendimento rapido</div></div>
+          <div class="skill-card"><div class="skill-icon">🔄</div><div class="skill-name">Flessibilità</div></div>
+          <div class="skill-card"><div class="skill-icon">💬</div><div class="skill-name">Relazione con il cliente</div></div>
+          <div class="skill-card"><div class="skill-icon">📋</div><div class="skill-name">Attenzione alle procedure</div></div>
+          <div class="skill-card"><div class="skill-icon">💻</div><div class="skill-name">Competenze digitali</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="esperienza" class="section" style="background: var(--color-surface);">
+    <div class="container fade-in">
+      <h2 class="section-title">Esperienza</h2>
+      <p class="section-subtitle">Le tappe principali del mio percorso professionale.</p>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3 class="timeline-role">Operaio Metalmeccanico</h3>
+          <p class="timeline-company">Halex Extrusions — Verdello (BG)</p>
+          <p class="timeline-desc">Esperienza lavorativa in ambito metalmeccanico, con focus sulla qualità e sul rispetto dei processi produttivi.</p>
+        </div>
+        <div class="timeline-item">
+          <h3 class="timeline-role">Operatore</h3>
+          <p class="timeline-company">Amazon — Italia</p>
+          <p class="timeline-desc">Esperienza in ambito aziendale e operativo, in un contesto dinamico e orientato all'efficienza.</p>
+        </div>
+        <div class="timeline-item">
+          <h3 class="timeline-role">Operatore di Linea</h3>
+          <p class="timeline-company">Zanetti S.p.A. — Lallio</p>
+          <p class="timeline-desc">Scarico bancali, taglio formaggio, posizionamento in linea e confezionamento.</p>
+        </div>
+        <div class="timeline-item">
+          <h3 class="timeline-role">Addetto Frigorìtoria e Vendita</h3>
+          <p class="timeline-company">Artigiano in Fiera / Milano RHO — Milano</p>
+          <p class="timeline-desc">Preparazione e vendita di alimenti fritti, con servizio diretto al cliente.</p>
+        </div>
+        <div class="timeline-item">
+          <h3 class="timeline-role">Cassiere / Commesso</h3>
+          <p class="timeline-company">Carrefour Market — Osio Sotto</p>
+          <p class="timeline-desc">Attività di reparto e gestione della cassa, con attenzione al servizio al cliente.</p>
+        </div>
+        <div class="timeline-item">
+          <h3 class="timeline-role">Operaio Metalmeccanico</h3>
+          <p class="timeline-company">Stematech — Ciserano</p>
+          <p class="timeline-desc">Lavorazione e produzione di componenti in ferro.</p>
+        </div>
+        <div class="timeline-item">
+          <h3 class="timeline-role">Scafalista</h3>
+          <p class="timeline-company">Carrefour Market — Osio Sotto</p>
+          <p class="timeline-desc">Scarico bancali, rifornimento scaffali e supporto alle attività di vendita.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="formazione" class="section">
+    <div class="container fade-in">
+      <h2 class="section-title">Formazione</h2>
+      <p class="section-subtitle">Le basi del mio percorso di studi.</p>
+      <div class="edu-card">
+        <div class="edu-icon">🎓</div>
+        <div>
+          <h3 class="edu-title">Diploma Tecnico in Grafica e Comunicazione</h3>
+          <p class="edu-school">Zenale e Butinone — Treviglio | Set 2014 – Giu 2020</p>
+          <p class="edu-desc">Progettazione e realizzazione di loghi, locandine, grafiche e design tramite software dedicati.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/stefano-depetro" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+      </div>
+      <p class="footer-copy">© 2026 Stefano Depetro</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const faders = document.querySelectorAll('.fade-in');
+      const appearOptions = { threshold: 0.15, rootMargin: "0px 0px -50px 0px" };
+      if ('IntersectionObserver' in window) {
+        const appearOnScroll = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          });
+        }, appearOptions);
+        faders.forEach(fader => appearOnScroll.observe(fader));
+      } else {
+        faders.forEach(f => f.classList.add('visible'));
+      }
+    });
+  </script>
+
+</body>
+</html>
